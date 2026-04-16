@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link href="paginainicial.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+         <img src="imagens/logo.png" alt="Techno Sweets">
+         <nav>
+            <form method="get" action="/buscar" class="searchA">
+                <input type="text" placeholder="Pesquisar" class="searchInp">
+                <button type="submit" class="searchBut">
+                    <a href="#">🔎</a>
+                </button> 
+            </form>
+         </nav>
+         <button class="ajuda" id="ajuda"><img alt="ajuda" src="imagens/ajuda.rem.png">Atendimento</button>
+         <button class="carrinho" id="ajuda"><img alt="carrinho" src="imagens/carrinho.png">Meu Carrinho</button>
+         <button class="conta" id="ajuda"><img alt="perfil" src="imagens/icons/perfil2.png" >Minha Conta</button>
+        </div>
+        <nav class="navbar-confeitaria">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#"><span class="icon">☰</span> TODOS</a>
+                </li>
+                <li class="separator">|</li>
+                <li class="nav-item">
+                    <a href="#"><span class="icon"><img src="imagens/icons/brigadeiro.png"></span> BRIGADEIROS</a>
+                </li>
+                <li class="separator">|</li>
+                <li class="nav-item">
+                    <a href="#"><span class="icon"><img src="imagens/icons/bolos.png"></span> BOLOS</a>
+                </li>
+                <li class="separator">|</li>
+                <li class="nav-item">
+                    <a href="#"><span class="icon"><img src="imagens/icons/pascoa.png"></span> PÁSCOA</a>
+                </li>
+                <li class="separator">|</li>
+                <li class="nav-item">
+                    <a href="#"><span class="icon"><img src="imagens/icons/trufa.png"></span> TRUFAS</a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+    </header>
+    <section>
+     <!--carrosel-->
+        <div class="carrosel_container">
+           <div class="slidecarrosel" id="slider">
+             <img src="imagens/carrosel/bolo.jpeg" alt="Imagen1">
+             <img src="imagens/carrosel/picole.jpeg" alt="Imagen2">
+             <img src="imagens/carrosel/sonho.jpeg" alt="Imagen3">
+             <img src="imagens/carrosel/bolo.jpeg" alt="Imagen4">
+             <img src="imagens/carrosel/picole.jpeg" alt="Imagen5">
+             <img src="imagens/carrosel/sonho.jpeg" alt="Imagen6">
+           </div>
+           <button class="bnt prev" onclick="moveSlide(-1)">&#10094;</button>
+           <button class="bnt next" onclick="moveSlide(1)">&#10095;</button>
+       </div>
+    </section>
+    <br><br>
+    <section class="max-width bg" id="Service">
+       <!--<p><b>Conheça alguns de nossos sabores:</b></p>-->
+       <br><br>
+        <div class="container">
+            <div class="content">
+                <div class="titulo">
+                    <h2 class="text-md color-cinza-1">Conheça Nossos</h2>
+                    <div class="line">
+                        <div class="text-titulo"><b>Sabores:</b></div>
+                    </div>
+                </div>
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="cards">
+                        <label class="card" for="item-1" id="song-1">
+                            <img src="imagens/doisamores.jpg" alt="">
+                            <button>Comprar Agora</button>
+                        </label>
+
+                        <label class="card" for="item-2" id="song-2">
+                            <img src="imagens/amendoim.jpg">
+                            <button>Comprar Agora</button>
+                        </label>
+
+                        <label class="card" for="item-3" id="song-3">
+                            <img src="imagens/brigadeiro.png">
+                            <button>Comprar Agora</button>
+                        </label>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+            <div class="container">
+            <img src="imagens/logo.png" alt="Techno swittes">
+            <p class="text-pq"><b>Copyright © 2022 <span class="color-laranja">FRONT</span> All Rights Reserved</b></p>
+            <p class="text-pq">Telefone: 8002-8922</p>
+        </div>
+    <script src="script.js"> </script>
+</body>
+</html>
